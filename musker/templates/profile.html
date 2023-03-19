@@ -18,6 +18,10 @@
     </div>
 
     <div class="col-4">
+      {% if profile.profile_image %}
+      <img src="{{ profile.profile_image.url }}" />
+      {% endif %}
+
       <div class="card">
         <h5 class="card-header">Follows</h5>
         <div class="card-body">
